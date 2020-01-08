@@ -17,6 +17,7 @@ public static class Grains
     {
         var list = Enumerable.Range(1,64).Select(x=> Square(x)).ToList();
         return list.Aggregate((a,c) => a+c);
-
+        //Saw in community solutions
+        //return ulong.MaxValue;
     }
 }
