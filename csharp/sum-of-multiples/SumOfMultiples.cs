@@ -12,14 +12,8 @@ public static class SumOfMultiples
         {
             for (int i = 0; i < max; i++)
             {
-                if (num * i >= max)
-                {
-                    break;
-                }
-                else
-                {
-                    toSumUp.Add(num * i);
-                }
+                if ((num * i) < max) toSumUp.Add(num * i);
+                else if (num * i >= max) break;
             }
         }
 
